@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B52FD3F-F80E-A0DD-1354-46DFA026D3EF" name="Employee_Manager">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:19:49 UTC</createdTime>
+<generatorID>E1D648E6-3AEB-54BA-9046-5C25E10977E8</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="manager_id" id="E1E63533-CF48-D565-9380-7A7B2FA94D38">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:19:49 UTC</createdTime>
+<generatorID>3DBC85A1-AC52-7A5F-6923-955E1601E5EA</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89ECDDAE-2E24-F49F-1AF1-4982B08B36BC" referredColumn="7053DE5E-ABA0-3001-70BC-63CCE589F762"/>
+</associations>
+</Column>
+<Column name="employee_id" id="26101E79-3D0B-15F5-B16B-5D21A8FE71E7">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:19:49 UTC</createdTime>
+<generatorID>2935E6C3-631C-C638-25B7-106A284798D1</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61B86BB8-D2F1-2818-AE21-D5B9E13AEEB7" referredColumn="7053DE5E-ABA0-3001-70BC-63CCE589F762"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2023AC94-F7C8-25B8-F4CC-4162CDF70294" name="Employee_Manager_Person_FK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:19:49 UTC</createdTime>
+<generatorID>90284C18-8F79-CC77-DBD9-E4AF0A95BAE8</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26101E79-3D0B-15F5-B16B-5D21A8FE71E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0C26546-3E71-D869-10D5-C98D97118419" name="Employee_Manager_Person_FKv1">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:19:49 UTC</createdTime>
+<generatorID>9746A4BF-B2DC-F133-61C2-DADCD2EE7D41</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1E63533-CF48-D565-9380-7A7B2FA94D38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

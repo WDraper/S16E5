@@ -1,0 +1,253 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E0C8FD3-6A8F-CB6A-4E59-55B7E5BB223B" name="Person">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:37:41 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="person_id" id="70548E11-08FE-C7AF-1616-F5854B2F8B08">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:37:58 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="D0FFC01B-DADD-5481-EB37-035683CB7B0F">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:39:37 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="9C648E56-8CED-E47B-4C98-219449A2F87C">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:38:12 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="4DB3B36C-3999-7DC9-7D7E-D3A4F4D3BF19">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:38:29 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="home_address" id="DD063F76-C585-1ACF-ADF4-96025D61D453">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:38:39 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zipcode" id="922F7A12-C56C-6D59-3245-E1442F775613">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:38:55 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="home_phone" id="262F5C8C-E38A-EDFA-22DF-3A4A5B883EED">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:39:05 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="us_citizen" id="C737EC6D-2C58-EDEE-EDD8-027B4FA0BC38">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:39:21 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="9E16F095-74F0-E2D1-8DC4-353081ED0F26">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:39:56 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="6690ECB3-AA56-09D6-B0E2-DBE52CD4545B">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:40:08 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary_exception" id="91D1065B-D922-5345-4EC7-EA9EF53353BF">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:40:16 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="isFired" id="2A69653A-908F-D13F-EE16-0F32ADFFD59C">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:40:47 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bonus" id="75535132-940C-353C-5CE9-50295A2CA2D5">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:40:55 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept_id" id="9BA58C72-E60D-0DEA-1469-859A88D34F72">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 23:56:36 UTC</createdTime>
+<generatorID>947EF502-FBDB-2BAA-7F10-BEF5F72F1424</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<referedAttribute>4095B5C6-E4B5-C91F-3F4A-57C1C3F703FB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id1" id="30E85299-6202-2E10-2EA9-FF5D8EBA36E4">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 22:07:43 UTC</createdTime>
+<generatorID>57420874-1A1A-0D59-7081-6497022A15F9</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id2" id="AF869758-18A4-3B55-4DF1-45AE9D630C41">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 22:15:14 UTC</createdTime>
+<generatorID>22D59131-E5F3-AFD9-FBEC-7FB25B6FD0DD</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="175C30F2-BC9A-DABE-59A8-5C50DE0FE805" name="Person PK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:38:10 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>70548E11-08FE-C7AF-1616-F5854B2F8B08</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

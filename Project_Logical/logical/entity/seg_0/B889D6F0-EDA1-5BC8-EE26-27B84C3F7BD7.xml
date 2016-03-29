@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B889D6F0-EDA1-5BC8-EE26-27B84C3F7BD7" name="Projects">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:45:26 UTC</createdTime>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="projects_id" id="B2178C27-4C00-EA98-0050-FCD1474BB803">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 22:00:54 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id" id="1A44770C-671C-FA87-F3C1-CEF9293C0207">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:45:39 UTC</createdTime>
+<generatorID>2922BE86-F684-8B36-6AD2-AE1C95A9EE92</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project_id" id="F2F0EF62-8C47-EC98-E3B0-A0DCCDDD10F8">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 22:45:47 UTC</createdTime>
+<generatorID>B430D43B-0BBB-DB13-69E9-86E22A6C929F</generatorID>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<referedAttribute>6869457C-3658-7F7D-B5B8-6F464031393B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98ECB8C4-3FB8-A2E1-51F8-AF23746E9266" name="Projects PK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 23:21:44 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B2178C27-4C00-EA98-0050-FCD1474BB803</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

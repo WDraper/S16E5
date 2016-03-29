@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="43EAF500-CC45-1A90-FF61-4F0355AC9831" name="Employee">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-21 20:05:12 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>8D78E4F1-4362-C389-171A-65E5D198FE38</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="employee_id" id="5D2DC010-8179-A945-373D-6D4FA43E51DD">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-21 20:05:47 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="AA762C98-72B2-A593-8AF4-63719358DF15">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-21 20:06:02 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary_exception" id="9AE1DB9F-9299-5947-A5E1-4FC63D4D9D77">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-22 18:34:33 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B6911C2A-7B7D-83AA-D7CB-5985A2A44F98" name="Employee PK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-21 20:06:00 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D2DC010-8179-A945-373D-6D4FA43E51DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

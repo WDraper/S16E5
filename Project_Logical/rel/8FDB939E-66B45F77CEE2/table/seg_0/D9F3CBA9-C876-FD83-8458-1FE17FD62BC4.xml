@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9F3CBA9-C876-FD83-8458-1FE17FD62BC4" name="Employees_Projects">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-24 00:03:44 UTC</createdTime>
+<generatorID>B889D6F0-EDA1-5BC8-EE26-27B84C3F7BD7</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<ordsAlias>projects</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employees_projects_id" id="ACEFE6F5-0C5D-D69D-DD45-189601907FA4">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 22:11:27 UTC</createdTime>
+<generatorID>B2178C27-4C00-EA98-0050-FCD1474BB803</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project_employee" id="F9EA150F-1EB9-622B-E963-C4F480227FF7">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-24 00:03:44 UTC</createdTime>
+<generatorID>1A44770C-671C-FA87-F3C1-CEF9293C0207</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="099230C7-A4E1-DF1F-EBAD-1A4B5650CE59" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
+</associations>
+</Column>
+<Column name="project_id" id="E6B0945D-87C6-E1E7-6307-BC7E1D2F9FE2">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-24 00:03:44 UTC</createdTime>
+<generatorID>F2F0EF62-8C47-EC98-E3B0-A0DCCDDD10F8</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93EC495E-B102-16C8-6190-CF4A1F6DE5E4" referredColumn="3B5BB00A-F44B-C0D4-8528-9FD9DECB5FDB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="773BCC7C-10F4-7C58-CE50-E2F7A20977BE" name="Projects_PKv1">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 23:27:58 UTC</createdTime>
+<generatorID>98ECB8C4-3FB8-A2E1-51F8-AF23746E9266</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACEFE6F5-0C5D-D69D-DD45-189601907FA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FE62F32-DD0E-BC79-4889-5218AF913EBD" name="Projects_PK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-28 22:22:13 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACEFE6F5-0C5D-D69D-DD45-189601907FA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BC51143-9A25-7135-7F5F-B5C20B197699" name="Projects_Person_FK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-24 00:03:44 UTC</createdTime>
+<generatorID>2922BE86-F684-8B36-6AD2-AE1C95A9EE92</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9EA150F-1EB9-622B-E963-C4F480227FF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94BE042D-C0D5-4698-7D22-9B67832660DB" name="Projects_Project_FK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-24 00:03:44 UTC</createdTime>
+<generatorID>B430D43B-0BBB-DB13-69E9-86E22A6C929F</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6B0945D-87C6-E1E7-6307-BC7E1D2F9FE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
