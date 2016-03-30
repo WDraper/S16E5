@@ -1,16 +1,1 @@
-Jake Mayo
-Steven Zhu
-Wes Draper
-
-
-You need to change CREODDL.ddl to your DDL file name below.
-
-cat CREODDL.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser.jar
-
-Once you see that it works, redirect the output into a file as follows:
- 
- cat Project.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser.jar > Project.ddl2
- 
-Do the same with parser2
-
- cat Project.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser2.jar > Project.ddl3
+URL to our apex app: https://apex.oracle.com/pls/apex/f?p=52430:1:10378895798932
