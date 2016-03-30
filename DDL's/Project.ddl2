@@ -1,34 +1,68 @@
-DROP SEQUENCE Department_seq ; 
-create sequence Department_seq 
+DROP SEQUENCE P_Department_seq ; 
+create sequence P_Department_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER Department_PK_trig 
+DROP TRIGGER P_Department_PK_trig 
 ; 
 
-create or replace trigger Department_PK_trig 
-before insert on Department
+create or replace trigger P_Department_PK_trig 
+before insert on P_Department
 for each row 
 begin 
-select Department_seq.nextval into :new.dept_id from dual; 
+select P_Department_seq.nextval into :new.dept_id from dual; 
 end; 
 /
 
-DROP SEQUENCE Employees_Projects_seq ; 
-create sequence Employees_Projects_seq 
+DROP SEQUENCE P_Person_seq ; 
+create sequence P_Person_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER Employees_Projects_PK_trig 
+DROP TRIGGER P_Person_PK_trig 
 ; 
 
-create or replace trigger Employees_Projects_PK_trig 
-before insert on Employees_Projects
+create or replace trigger P_Person_PK_trig 
+before insert on P_Person
 for each row 
 begin 
-select Employees_Projects_seq.nextval into :new.employees_projects_id from dual; 
+select P_Person_seq.nextval into :new.person_id from dual; 
+end; 
+/
+
+DROP SEQUENCE P_Project_seq ; 
+create sequence P_Project_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER P_Project_PK_trig 
+; 
+
+create or replace trigger P_Project_PK_trig 
+before insert on P_Project
+for each row 
+begin 
+select P_Project_seq.nextval into :new.project_id from dual; 
+end; 
+/
+
+DROP SEQUENCE P_Projects_seq ; 
+create sequence P_Projects_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER P_Projects_PK_trig 
+; 
+
+create or replace trigger P_Projects_PK_trig 
+before insert on P_Projects
+for each row 
+begin 
+select P_Projects_seq.nextval into :new.employees_projects_id from dual; 
 end; 
 /
 
@@ -49,57 +83,23 @@ select Parent_Child_seq.nextval into :new.parent_child_id from dual;
 end; 
 /
 
-DROP SEQUENCE Person_seq ; 
-create sequence Person_seq 
-start with 100 
-increment by 1 
-nomaxvalue 
-;
-DROP TRIGGER Person_PK_trig 
-; 
-
-create or replace trigger Person_PK_trig 
-before insert on Person
-for each row 
-begin 
-select Person_seq.nextval into :new.person_id from dual; 
-end; 
-/
-
-DROP SEQUENCE Project_seq ; 
-create sequence Project_seq 
-start with 100 
-increment by 1 
-nomaxvalue 
-;
-DROP TRIGGER Project_PK_trig 
-; 
-
-create or replace trigger Project_PK_trig 
-before insert on Project
-for each row 
-begin 
-select Project_seq.nextval into :new.project_id from dual; 
-end; 
-/
-
-DROP INDEX parent_id_FK_0 ;
-CREATE INDEX parent_id_FK_0 ON Parent_Child(parent_id) ;
-DROP INDEX child_id_FK_1 ;
-CREATE INDEX child_id_FK_1 ON Parent_Child(child_id) ;
-DROP INDEX dept_id_FK_2 ;
-CREATE INDEX dept_id_FK_2 ON Person(dept_id) ;
-DROP INDEX employees_id_FK_3 ;
-CREATE INDEX employees_id_FK_3 ON Person(employees_id) ;
-DROP INDEX spouse_id_FK_4 ;
-CREATE INDEX spouse_id_FK_4 ON Person(spouse_id) ;
-DROP INDEX dept_id_FK_5 ;
-CREATE INDEX dept_id_FK_5 ON Project(dept_id) ;
-DROP INDEX manager_id_FK_6 ;
-CREATE INDEX manager_id_FK_6 ON Project(manager_id) ;
-DROP INDEX sub_project_FK_7 ;
-CREATE INDEX sub_project_FK_7 ON Project(sub_project) ;
-DROP INDEX project_employee_FK_8 ;
-CREATE INDEX project_employee_FK_8 ON Employees_Projects(project_employee) ;
-DROP INDEX project_id_FK_9 ;
-CREATE INDEX project_id_FK_9 ON Employees_Projects(project_id) ;
+DROP INDEX dept_id_FK_0 ;
+CREATE INDEX dept_id_FK_0 ON P_Person(dept_id) ;
+DROP INDEX employees_id_FK_1 ;
+CREATE INDEX employees_id_FK_1 ON P_Person(employees_id) ;
+DROP INDEX spouse_id_FK_2 ;
+CREATE INDEX spouse_id_FK_2 ON P_Person(spouse_id) ;
+DROP INDEX dept_id_FK_3 ;
+CREATE INDEX dept_id_FK_3 ON P_Project(dept_id) ;
+DROP INDEX manager_id_FK_4 ;
+CREATE INDEX manager_id_FK_4 ON P_Project(manager_id) ;
+DROP INDEX sub_project_FK_5 ;
+CREATE INDEX sub_project_FK_5 ON P_Project(sub_project) ;
+DROP INDEX project_employee_FK_6 ;
+CREATE INDEX project_employee_FK_6 ON P_Projects(project_employee) ;
+DROP INDEX project_id_FK_7 ;
+CREATE INDEX project_id_FK_7 ON P_Projects(project_id) ;
+DROP INDEX parent_id_FK_8 ;
+CREATE INDEX parent_id_FK_8 ON Parent_Child(parent_id) ;
+DROP INDEX child_id_FK_9 ;
+CREATE INDEX child_id_FK_9 ON Parent_Child(child_id) ;

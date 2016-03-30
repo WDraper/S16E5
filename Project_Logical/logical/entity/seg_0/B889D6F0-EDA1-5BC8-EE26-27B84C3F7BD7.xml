@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B889D6F0-EDA1-5BC8-EE26-27B84C3F7BD7" name="Projects">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B889D6F0-EDA1-5BC8-EE26-27B84C3F7BD7" name="P_Projects">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-23 22:45:26 UTC</createdTime>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
@@ -61,8 +61,9 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 23:21:44 UTC</createdTime>
 <ownerDesignName>Project_Logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

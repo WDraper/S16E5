@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9F3CBA9-C876-FD83-8458-1FE17FD62BC4" name="Employees_Projects">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9F3CBA9-C876-FD83-8458-1FE17FD62BC4" name="P_Projects">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>B889D6F0-EDA1-5BC8-EE26-27B84C3F7BD7</generatorID>
@@ -52,7 +52,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="773BCC7C-10F4-7C58-CE50-E2F7A20977BE" name="Projects_PKv1">
+<ind_PK_UK id="773BCC7C-10F4-7C58-CE50-E2F7A20977BE" name="P_Projects_PK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 23:27:58 UTC</createdTime>
 <generatorID>98ECB8C4-3FB8-A2E1-51F8-AF23746E9266</generatorID>
@@ -74,7 +74,7 @@
 <colUsage columnID="ACEFE6F5-0C5D-D69D-DD45-189601907FA4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9BC51143-9A25-7135-7F5F-B5C20B197699" name="Projects_Person_FK">
+<ind_PK_UK id="9BC51143-9A25-7135-7F5F-B5C20B197699" name="P_Projects_P_Person_FK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>2922BE86-F684-8B36-6AD2-AE1C95A9EE92</generatorID>
@@ -85,7 +85,7 @@
 <colUsage columnID="F9EA150F-1EB9-622B-E963-C4F480227FF7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="94BE042D-C0D5-4698-7D22-9B67832660DB" name="Projects_Project_FK">
+<ind_PK_UK id="94BE042D-C0D5-4698-7D22-9B67832660DB" name="P_Projects_P_Project_FK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>B430D43B-0BBB-DB13-69E9-86E22A6C929F</generatorID>

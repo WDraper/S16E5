@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3017A70-BD20-267C-A994-F91D6F4FBA16" name="Person">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3017A70-BD20-267C-A994-F91D6F4FBA16" name="P_Person">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>8E0C8FD3-6A8F-CB6A-4E59-55B7E5BB223B</generatorID>
@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="type" id="C678B55B-8DAC-3B78-C1CE-8C37BC7F8C86">
+<Column name="person_type" id="C678B55B-8DAC-3B78-C1CE-8C37BC7F8C86">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>D0FFC01B-DADD-5481-EB37-035683CB7B0F</generatorID>
@@ -217,7 +217,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1997AACB-3AA6-0152-268E-F1DF97613F35" name="Person_PK">
+<ind_PK_UK id="1997AACB-3AA6-0152-268E-F1DF97613F35" name="P_Person_PK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>175C30F2-BC9A-DABE-59A8-5C50DE0FE805</generatorID>
@@ -240,7 +240,7 @@
 <colUsage columnID="2B256F80-7912-C3D8-4F68-3867D42D803E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C3B1A3CA-8CC0-92AD-5E78-92B1BF1B9C85" name="Person_Department_FK">
+<ind_PK_UK id="C3B1A3CA-8CC0-92AD-5E78-92B1BF1B9C85" name="P_Person_P_Department_FK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>947EF502-FBDB-2BAA-7F10-BEF5F72F1424</generatorID>
@@ -251,7 +251,7 @@
 <colUsage columnID="D1125EE7-068D-E0B2-DED7-34CA38FF65FC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BEB76C02-5F06-82A5-3C83-F9CE664D566D" name="Person_Person_FK">
+<ind_PK_UK id="BEB76C02-5F06-82A5-3C83-F9CE664D566D" name="P_Person_P_Person_FK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:11:27 UTC</createdTime>
 <generatorID>57420874-1A1A-0D59-7081-6497022A15F9</generatorID>
@@ -262,7 +262,7 @@
 <colUsage columnID="EE20C177-4181-3122-EE7F-001ED36465E7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="73EEF15F-0A70-C68F-15C3-C83E307287FD" name="Person_Person_FKv2">
+<ind_PK_UK id="73EEF15F-0A70-C68F-15C3-C83E307287FD" name="P_Person_P_Person_FKv2">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:15:50 UTC</createdTime>
 <generatorID>22D59131-E5F3-AFD9-FBEC-7FB25B6FD0DD</generatorID>

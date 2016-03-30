@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA6066AF-5567-374E-CD1C-BA120B1E7A27" name="Department">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA6066AF-5567-374E-CD1C-BA120B1E7A27" name="P_Department">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>7440C114-2EFF-3DC9-5F13-EF7CBD694CE2</generatorID>
@@ -34,7 +34,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A747C401-2461-AEB3-FE99-D622661BFAEA" name="Department_PK">
+<ind_PK_UK id="A747C401-2461-AEB3-FE99-D622661BFAEA" name="P_Department_PK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>92DAC373-52BC-C99E-D3C0-6B8277240C45</generatorID>
