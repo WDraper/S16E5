@@ -3,8 +3,15 @@
 --   site:      Oracle Database 11g
 --   type:      Oracle Database 11g
 
+DROP TABLE P_Department CASCADE CONSTRAINTS ;
 
+DROP TABLE P_Person CASCADE CONSTRAINTS ;
 
+DROP TABLE P_Project CASCADE CONSTRAINTS ;
+
+DROP TABLE P_Projects CASCADE CONSTRAINTS ;
+
+DROP TABLE Parent_Child CASCADE CONSTRAINTS ;
 
 CREATE TABLE P_Department
   (
