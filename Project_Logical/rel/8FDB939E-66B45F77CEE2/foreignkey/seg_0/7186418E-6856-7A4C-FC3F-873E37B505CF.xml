@@ -3,12 +3,12 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>947EF502-FBDB-2BAA-7F10-BEF5F72F1424</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>DA6066AF-5567-374E-CD1C-BA120B1E7A27</referredTableID>
 <keyObject>A747C401-2461-AEB3-FE99-D622661BFAEA</keyObject>
 <referredKeyID>A747C401-2461-AEB3-FE99-D622661BFAEA</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

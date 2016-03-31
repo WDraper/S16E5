@@ -177,6 +177,20 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="quit" id="C72B2E75-F038-A7E5-8644-902CF61741DA">
+<createdBy>Steven</createdBy>
+<createdTime>2016-03-31 20:41:47 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="bonus" id="75535132-940C-353C-5CE9-50295A2CA2D5">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-23 03:40:55 UTC</createdTime>
@@ -194,10 +208,11 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-23 23:56:36 UTC</createdTime>
 <generatorID>947EF502-FBDB-2BAA-7F10-BEF5F72F1424</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>4095B5C6-E4B5-C91F-3F4A-57C1C3F703FB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -208,7 +223,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:07:43 UTC</createdTime>
 <generatorID>57420874-1A1A-0D59-7081-6497022A15F9</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
@@ -223,7 +238,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:15:14 UTC</createdTime>
 <generatorID>22D59131-E5F3-AFD9-FBEC-7FB25B6FD0DD</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>

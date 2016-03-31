@@ -3,7 +3,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>89625734-BB3A-994B-DACF-761FD23327CB</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:11:27 UTC</createdTime>
 <generatorID>8542716C-9357-DCAF-9A08-5517BEB12A04</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -23,7 +23,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>0369C29F-3354-DE99-049A-080DFF0E81F1</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -38,7 +38,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>1AC12CD4-8D12-4DC2-E682-B02B6016DE23</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -55,7 +55,7 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:11:27 UTC</createdTime>
 <generatorID>08BA14C0-1914-B008-1909-3A910573797F</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -67,18 +67,18 @@
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>6DE0F755-CA41-5865-9A7D-82DF4F488575</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="94E38913-69F2-2879-5B7E-7643A49B16AA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="36DDD8A2-5570-7160-093D-A375E22E879E" name="Parent_Child_P_Person_FKv2">
+<ind_PK_UK id="36DDD8A2-5570-7160-093D-A375E22E879E" name="Parent_Child_P_Person_FKv1">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>B4255885-64C1-E249-055F-6058B3264406</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
+<ownerDesignName>Logical_Project_A</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
