@@ -43,9 +43,10 @@ BEGIN
         salary,
         salary_exception,
         isFired,
+        quit,
         bonus,
         dept_id,
-        employee_id,
+        employees_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
@@ -60,9 +61,10 @@ BEGIN
         :NEW.salary,
         :NEW.salary_exception,
         :NEW.isFired,
+        :NEW.quit,
         :NEW.bonus,
         :NEW.dept_id,
-        :NEW.employee_id,
+        :NEW.employees_id,
         :NEW.spouse_id) ;
 END;
 /
