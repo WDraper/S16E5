@@ -83,9 +83,9 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="zipcode" id="922F7A12-C56C-6D59-3245-E1442F775613">
+<Attribute name="home_phone" id="262F5C8C-E38A-EDFA-22DF-3A4A5B883EED">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-23 03:38:55 UTC</createdTime>
+<createdTime>2016-03-23 03:39:05 UTC</createdTime>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
@@ -96,9 +96,36 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="home_phone" id="262F5C8C-E38A-EDFA-22DF-3A4A5B883EED">
+<Attribute name="city" id="5C6E6CF9-8E28-CB7D-CF10-C58546D7F27E">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-23 03:39:05 UTC</createdTime>
+<createdTime>2016-04-14 02:15:03 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="state" id="AA0A7302-8CC0-9ECF-E280-344C91E41E3E">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 02:15:15 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zipcode" id="922F7A12-C56C-6D59-3245-E1442F775613">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-23 03:38:55 UTC</createdTime>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
@@ -219,31 +246,14 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="person_id1" id="30E85299-6202-2E10-2EA9-FF5D8EBA36E4">
+<Attribute name="spouse_id" id="BDD53D52-9A14-2251-F6AB-DAF92AD3DD1D">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:07:43 UTC</createdTime>
-<generatorID>57420874-1A1A-0D59-7081-6497022A15F9</generatorID>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
+<createdTime>2016-04-14 02:27:52 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="person_id2" id="AF869758-18A4-3B55-4DF1-45AE9D630C41">
-<createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:15:14 UTC</createdTime>
-<generatorID>22D59131-E5F3-AFD9-FBEC-7FB25B6FD0DD</generatorID>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
-<engineerTo>
-<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

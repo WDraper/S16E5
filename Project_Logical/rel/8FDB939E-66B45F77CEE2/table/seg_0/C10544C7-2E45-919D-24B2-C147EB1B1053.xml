@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C10544C7-2E45-919D-24B2-C147EB1B1053" name="manager_employee">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>97FF50AE-713A-4477-30AA-9FDAE4FA3D0B</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="manager_employee_id" id="B3203A00-6C06-3DCC-5B84-10D8BD0A58FB">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>D5120A1A-B53F-BB2E-0BAA-C0E370E6697D</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manager_id" id="B414B8D9-D56E-1323-CA0C-189CA1B50E64">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>F780A97A-A5AE-CA5A-1E8F-78C49E4A38DE</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04E9B1D9-8AF7-1197-C2EF-0D4C0027A2D9" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
+</associations>
+</Column>
+<Column name="employee_id" id="4AA37F4B-AB37-EDBA-2ACA-B70937FA8FBF">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>9F3F3AD0-65A7-9ADD-DFC7-4F88D27B4318</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBA41C6D-6D99-436E-C3EF-83D8F866F6CD" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65FB20FD-649D-879F-B397-0BC3FBDEF85D" name="manager_employee_PK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>55A7E51A-336B-7F0C-5939-7580B148B5F5</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3203A00-6C06-3DCC-5B84-10D8BD0A58FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58B38E7F-8F77-84A8-A678-F06DB282450F" name="manager_employee_P_Person_FK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>F81F8C2E-812D-F690-BDE4-9734CA7856AE</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B414B8D9-D56E-1323-CA0C-189CA1B50E64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C457CBD-E813-BB6E-E43E-0852BC246AA0" name="manager_employee_P_Person_FKv1">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 03:15:25 UTC</createdTime>
+<generatorID>5DF34983-303B-8A20-6032-84B0A2362E06</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AA37F4B-AB37-EDBA-2ACA-B70937FA8FBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

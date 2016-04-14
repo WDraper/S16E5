@@ -1,1 +1,14 @@
+# CS347Project
+Data Management Project
+
+Jake Mayo
+Wes Draper
+Steven Zhu
+
 URL to our apex app: https://apex.oracle.com/pls/apex/f?p=52430:1:10378895798932
+
+
+cat DDLtest.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser.jar > DDLtest.ddl2
+ 
+ 
+cat DDLtest.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser2.jar > DDLtest.ddl3

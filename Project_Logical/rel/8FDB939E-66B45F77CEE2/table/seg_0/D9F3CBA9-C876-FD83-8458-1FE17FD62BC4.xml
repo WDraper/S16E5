@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="employees_projects_id" id="ACEFE6F5-0C5D-D69D-DD45-189601907FA4">
+<Column name="projects_id" id="ACEFE6F5-0C5D-D69D-DD45-189601907FA4">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-28 22:11:27 UTC</createdTime>
 <generatorID>B2178C27-4C00-EA98-0050-FCD1474BB803</generatorID>
@@ -20,11 +20,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="project_id" id="F9EA150F-1EB9-622B-E963-C4F480227FF7">
+<Column name="person_id" id="F9EA150F-1EB9-622B-E963-C4F480227FF7">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>1A44770C-671C-FA87-F3C1-CEF9293C0207</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -35,11 +36,12 @@
 <colAssociation fkAssociation="099230C7-A4E1-DF1F-EBAD-1A4B5650CE59" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
 </associations>
 </Column>
-<Column name="project_employee" id="E6B0945D-87C6-E1E7-6307-BC7E1D2F9FE2">
+<Column name="project_id" id="E6B0945D-87C6-E1E7-6307-BC7E1D2F9FE2">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>F2F0EF62-8C47-EC98-E3B0-A0DCCDDD10F8</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -49,6 +51,19 @@
 <associations>
 <colAssociation fkAssociation="93EC495E-B102-16C8-6190-CF4A1F6DE5E4" referredColumn="3B5BB00A-F44B-C0D4-8528-9FD9DECB5FDB"/>
 </associations>
+</Column>
+<Column name="previous_project" id="2DC88D68-04E7-5EBA-3844-D7D2308F9E6E">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 02:28:30 UTC</createdTime>
+<generatorID>2C4E2050-45B7-D5B4-0BC8-EE4D13ED9F3A</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

@@ -1,4 +1,4 @@
-drop view P_Employee_view ;
+drop view Employee_view ;
 drop view Previous_Employee_view ;
 drop view Manager_view ;
 drop view President_view ;
@@ -6,13 +6,15 @@ drop view Interim_Manager_view ;
 drop view Current_Project_view ;
 drop view Previous_Project_view ;
 
-create view P_Employee_view as
+create view Employee_view as
 SELECT 
     person_id,
     person_type,
     first_name,
     last_name,
     home_address,
+    city,
+    state,
     zipcode,
     home_phone,
     us_citizen,
@@ -20,14 +22,14 @@ SELECT
     salary,
     salary_exception,
     isFired,
+    quit,
     bonus,
     dept_id,
-    employees_id,
     spouse_id
 FROM P_Person where person_type = 'Employee' ;
 
-create or replace TRIGGER P_Employee_trigger
-     INSTEAD OF insert ON P_Employee_view
+create or replace TRIGGER Employee_trigger
+     INSTEAD OF insert ON Employee_view
      FOR EACH ROW
 BEGIN
     insert into P_Person(
@@ -36,6 +38,8 @@ BEGIN
         first_name,
         last_name,
         home_address,
+        city,
+        state,
         zipcode,
         home_phone,
         us_citizen,
@@ -46,7 +50,6 @@ BEGIN
         quit,
         bonus,
         dept_id,
-        employees_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
@@ -54,6 +57,8 @@ BEGIN
         :NEW.first_name,
         :NEW.last_name,
         :NEW.home_address,
+        :NEW.city,
+        :NEW.state,
         :NEW.zipcode,
         :NEW.home_phone,
         :NEW.us_citizen,
@@ -64,7 +69,6 @@ BEGIN
         :NEW.quit,
         :NEW.bonus,
         :NEW.dept_id,
-        :NEW.employees_id,
         :NEW.spouse_id) ;
 END;
 /
@@ -76,6 +80,8 @@ SELECT
     first_name,
     last_name,
     home_address,
+    city,
+    state,
     zipcode,
     home_phone,
     us_citizen,
@@ -83,9 +89,9 @@ SELECT
     salary,
     salary_exception,
     isFired,
+    quit,
     bonus,
     dept_id,
-    employees_id,
     spouse_id
 FROM P_Person where person_type = 'Previous_Employee' ;
 
@@ -99,6 +105,8 @@ BEGIN
         first_name,
         last_name,
         home_address,
+        city,
+        state,
         zipcode,
         home_phone,
         us_citizen,
@@ -106,16 +114,18 @@ BEGIN
         salary,
         salary_exception,
         isFired,
+        quit,
         bonus,
         dept_id,
-        employee_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
-        'Previous_Employee',
+        'Employee',
         :NEW.first_name,
         :NEW.last_name,
         :NEW.home_address,
+        :NEW.city,
+        :NEW.state,
         :NEW.zipcode,
         :NEW.home_phone,
         :NEW.us_citizen,
@@ -123,9 +133,9 @@ BEGIN
         :NEW.salary,
         :NEW.salary_exception,
         :NEW.isFired,
+        :NEW.quit,
         :NEW.bonus,
         :NEW.dept_id,
-        :NEW.employee_id,
         :NEW.spouse_id) ;
 END;
 /
@@ -137,6 +147,8 @@ SELECT
     first_name,
     last_name,
     home_address,
+    city,
+    state,
     zipcode,
     home_phone,
     us_citizen,
@@ -144,14 +156,14 @@ SELECT
     salary,
     salary_exception,
     isFired,
+    quit,
     bonus,
     dept_id,
-    employees_id,
     spouse_id
 FROM P_Person where person_type = 'Manager' ;
 
-create or replace TRIGGER P_Employee_trigger
-     INSTEAD OF insert ON P_Employee_view
+create or replace TRIGGER Manager_trigger
+     INSTEAD OF insert ON Manager_view
      FOR EACH ROW
 BEGIN
     insert into P_Person(
@@ -160,6 +172,8 @@ BEGIN
         first_name,
         last_name,
         home_address,
+        city,
+        state,
         zipcode,
         home_phone,
         us_citizen,
@@ -167,16 +181,18 @@ BEGIN
         salary,
         salary_exception,
         isFired,
+        quit,
         bonus,
         dept_id,
-        employee_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
-        'Manager',
+        'Employee',
         :NEW.first_name,
         :NEW.last_name,
         :NEW.home_address,
+        :NEW.city,
+        :NEW.state,
         :NEW.zipcode,
         :NEW.home_phone,
         :NEW.us_citizen,
@@ -184,9 +200,9 @@ BEGIN
         :NEW.salary,
         :NEW.salary_exception,
         :NEW.isFired,
+        :NEW.quit,
         :NEW.bonus,
         :NEW.dept_id,
-        :NEW.employee_id,
         :NEW.spouse_id) ;
 END;
 /
@@ -198,6 +214,8 @@ SELECT
     first_name,
     last_name,
     home_address,
+    city,
+    state,
     zipcode,
     home_phone,
     us_citizen,
@@ -205,14 +223,14 @@ SELECT
     salary,
     salary_exception,
     isFired,
+    quit,
     bonus,
     dept_id,
-    employees_id,
     spouse_id
 FROM P_Person where person_type = 'President' ;
 
-create or replace TRIGGER P_Employee_trigger
-     INSTEAD OF insert ON P_Employee_view
+create or replace TRIGGER President_trigger
+     INSTEAD OF insert ON President_view
      FOR EACH ROW
 BEGIN
     insert into P_Person(
@@ -221,6 +239,8 @@ BEGIN
         first_name,
         last_name,
         home_address,
+        city,
+        state,
         zipcode,
         home_phone,
         us_citizen,
@@ -228,16 +248,18 @@ BEGIN
         salary,
         salary_exception,
         isFired,
+        quit,
         bonus,
         dept_id,
-        employee_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
-        'President',
+        'Employee',
         :NEW.first_name,
         :NEW.last_name,
         :NEW.home_address,
+        :NEW.city,
+        :NEW.state,
         :NEW.zipcode,
         :NEW.home_phone,
         :NEW.us_citizen,
@@ -245,9 +267,9 @@ BEGIN
         :NEW.salary,
         :NEW.salary_exception,
         :NEW.isFired,
+        :NEW.quit,
         :NEW.bonus,
         :NEW.dept_id,
-        :NEW.employee_id,
         :NEW.spouse_id) ;
 END;
 /
@@ -259,6 +281,8 @@ SELECT
     first_name,
     last_name,
     home_address,
+    city,
+    state,
     zipcode,
     home_phone,
     us_citizen,
@@ -266,14 +290,14 @@ SELECT
     salary,
     salary_exception,
     isFired,
+    quit,
     bonus,
     dept_id,
-    employees_id,
     spouse_id
 FROM P_Person where person_type = 'Interim_Manager' ;
 
-create or replace TRIGGER P_Employee_trigger
-     INSTEAD OF insert ON P_Employee_view
+create or replace TRIGGER Interim_Manager_trigger
+     INSTEAD OF insert ON Interim_Manager_view
      FOR EACH ROW
 BEGIN
     insert into P_Person(
@@ -282,6 +306,8 @@ BEGIN
         first_name,
         last_name,
         home_address,
+        city,
+        state,
         zipcode,
         home_phone,
         us_citizen,
@@ -289,16 +315,18 @@ BEGIN
         salary,
         salary_exception,
         isFired,
+        quit,
         bonus,
         dept_id,
-        employee_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
-        'Interim_Manager',
+        'Employee',
         :NEW.first_name,
         :NEW.last_name,
         :NEW.home_address,
+        :NEW.city,
+        :NEW.state,
         :NEW.zipcode,
         :NEW.home_phone,
         :NEW.us_citizen,
@@ -306,9 +334,9 @@ BEGIN
         :NEW.salary,
         :NEW.salary_exception,
         :NEW.isFired,
+        :NEW.quit,
         :NEW.bonus,
         :NEW.dept_id,
-        :NEW.employee_id,
         :NEW.spouse_id) ;
 END;
 /
@@ -321,7 +349,8 @@ SELECT
     project_active,
     end_date,
     est_person_hours,
-    master_project
+    manager_id,
+    dept_id
 FROM P_Project where project_type = 'Current_Project' ;
 
 create or replace TRIGGER Current_Project_trigger
@@ -335,7 +364,8 @@ BEGIN
         project_active,
         end_date,
         est_person_hours,
-        master_project)
+        manager_id,
+        dept_id)
     VALUES ( 
         :NEW.project_id,
         :NEW.project_title,
@@ -343,7 +373,8 @@ BEGIN
         :NEW.project_active,
         :NEW.end_date,
         :NEW.est_person_hours,
-        :NEW.master_project) ;
+        :NEW.manager_id,
+        :NEW.dept_id) ;
 END;
 /
 
@@ -355,11 +386,12 @@ SELECT
     project_active,
     end_date,
     est_person_hours,
-    master_project
+    manager_id,
+    dept_id
 FROM P_Project where project_type = 'Previous_Project' ;
 
-create or replace TRIGGER Current_Project_trigger
-     INSTEAD OF insert ON Current_Project_view
+create or replace TRIGGER Previous_Project_trigger
+     INSTEAD OF insert ON Previous_Project_view
      FOR EACH ROW
 BEGIN
     insert into P_Project(
@@ -369,7 +401,8 @@ BEGIN
         project_active,
         end_date,
         est_person_hours,
-        master_project)
+        manager_id,
+        dept_id)
     VALUES ( 
         :NEW.project_id,
         :NEW.project_title,
@@ -377,6 +410,7 @@ BEGIN
         :NEW.project_active,
         :NEW.end_date,
         :NEW.est_person_hours,
-        :NEW.master_project) ;
+        :NEW.manager_id,
+        :NEW.dept_id) ;
 END;
 /

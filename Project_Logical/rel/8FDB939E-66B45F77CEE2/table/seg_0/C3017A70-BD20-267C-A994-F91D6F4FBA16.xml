@@ -71,6 +71,32 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="city" id="45C3ACA6-C712-5C5C-E6D8-2197413B6CB8">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 02:28:30 UTC</createdTime>
+<generatorID>5C6E6CF9-8E28-CB7D-CF10-C58546D7F27E</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="07A23CA2-87EE-0069-EB12-95914F0918EF">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-14 02:28:30 UTC</createdTime>
+<generatorID>AA0A7302-8CC0-9ECF-E280-344C91E41E3E</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="zipcode" id="5C1F39F6-E562-D2B6-1356-48A46266CA42">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
@@ -198,37 +224,17 @@
 <colAssociation fkAssociation="7186418E-6856-7A4C-FC3F-873E37B505CF" referredColumn="F88B8160-3780-F3F8-C52A-B45D1A223C55"/>
 </associations>
 </Column>
-<Column name="employees_id" id="EE20C177-4181-3122-EE7F-001ED36465E7">
+<Column name="spouse_id" id="F07EF9E8-7818-1E6E-F4AA-22C568B23ADE">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:11:27 UTC</createdTime>
-<generatorID>30E85299-6202-2E10-2EA9-FF5D8EBA36E4</generatorID>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
+<createdTime>2016-04-14 02:28:30 UTC</createdTime>
+<generatorID>BDD53D52-9A14-2251-F6AB-DAF92AD3DD1D</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="2E5B07FD-A8B0-8968-D483-106AE0E81B2C" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
-</associations>
-</Column>
-<Column name="spouse_id" id="2B256F80-7912-C3D8-4F68-3867D42D803E">
-<createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:15:50 UTC</createdTime>
-<generatorID>AF869758-18A4-3B55-4DF1-45AE9D630C41</generatorID>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="76745DD9-D091-571C-D8A2-BCF349AAF9AC" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -244,17 +250,6 @@
 <colUsage columnID="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CF65E920-EDCE-A4DC-D012-CEBDC0789BD1" name="Person__IDX">
-<createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:15:50 UTC</createdTime>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>22D59131-E5F3-AFD9-FBEC-7FB25B6FD0DD</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="2B256F80-7912-C3D8-4F68-3867D42D803E"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="C3B1A3CA-8CC0-92AD-5E78-92B1BF1B9C85" name="P_Person_P_Department_FK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
@@ -264,28 +259,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D1125EE7-068D-E0B2-DED7-34CA38FF65FC"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="BEB76C02-5F06-82A5-3C83-F9CE664D566D" name="P_Person_P_Person_FK">
-<createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:11:27 UTC</createdTime>
-<generatorID>57420874-1A1A-0D59-7081-6497022A15F9</generatorID>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EE20C177-4181-3122-EE7F-001ED36465E7"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="73EEF15F-0A70-C68F-15C3-C83E307287FD" name="P_Person_P_Person_FKv1">
-<createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:15:50 UTC</createdTime>
-<generatorID>22D59131-E5F3-AFD9-FBEC-7FB25B6FD0DD</generatorID>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2B256F80-7912-C3D8-4F68-3867D42D803E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

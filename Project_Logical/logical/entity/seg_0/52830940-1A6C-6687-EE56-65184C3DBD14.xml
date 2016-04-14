@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89625734-BB3A-994B-DACF-761FD23327CB" name="Parent_Child">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="52830940-1A6C-6687-EE56-65184C3DBD14" name="sub_projects">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-23 22:15:03 UTC</createdTime>
-<ownerDesignName>Logical_Project_A</ownerDesignName>
+<createdTime>2016-04-14 02:33:16 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="parent_child_id" id="8542716C-9357-DCAF-9A08-5517BEB12A04">
+<Attribute name="sub_project_id" id="81917B1E-DA13-8270-11D2-855D7BA7E70A">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:01:41 UTC</createdTime>
+<createdTime>2016-04-14 02:33:46 UTC</createdTime>
 <ownerDesignName>Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
@@ -27,31 +27,31 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="person_id" id="0369C29F-3354-DE99-049A-080DFF0E81F1">
+<Attribute name="project_id" id="DE3827F2-DDC1-93D3-F7E3-926B08620831">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-23 23:59:27 UTC</createdTime>
-<generatorID>6DE0F755-CA41-5865-9A7D-82DF4F488575</generatorID>
+<createdTime>2016-04-14 02:34:02 UTC</createdTime>
+<generatorID>A2C730AE-34D1-4A5B-238B-C582BADAE88D</generatorID>
 <ownerDesignName>Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
+<referedAttribute>6869457C-3658-7F7D-B5B8-6F464031393B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="person_id1" id="1AC12CD4-8D12-4DC2-E682-B02B6016DE23">
+<Attribute name="project_id1" id="AE3A2193-9B4A-25DA-FCE9-6FA76C810E9C">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-23 23:59:31 UTC</createdTime>
-<generatorID>B4255885-64C1-E249-055F-6058B3264406</generatorID>
+<createdTime>2016-04-14 02:34:09 UTC</createdTime>
+<generatorID>C5E427F0-3624-A2AC-FB3C-B2D3DF48C641</generatorID>
 <ownerDesignName>Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>70548E11-08FE-C7AF-1616-F5854B2F8B08</referedAttribute>
+<referedAttribute>6869457C-3658-7F7D-B5B8-6F464031393B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -59,17 +59,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="08BA14C0-1914-B008-1909-3A910573797F" name="Parent_Child PK">
+<identifier id="1DBB3CA9-67EE-46CC-B342-E1DFA7B51E46" name="sub_projects PK">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-03-28 22:01:51 UTC</createdTime>
+<createdTime>2016-04-14 02:37:21 UTC</createdTime>
 <ownerDesignName>Project_Logical</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="false"/>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8542716C-9357-DCAF-9A08-5517BEB12A04</attributeRef>
+<attributeRef>81917B1E-DA13-8270-11D2-855D7BA7E70A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
