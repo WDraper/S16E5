@@ -121,7 +121,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="zipcode" id="922F7A12-C56C-6D59-3245-E1442F775613">
 <createdBy>jakemayo</createdBy>
@@ -239,7 +240,6 @@
 <engineerTo>
 <item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>4095B5C6-E4B5-C91F-3F4A-57C1C3F703FB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

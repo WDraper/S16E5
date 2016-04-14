@@ -8,7 +8,7 @@
 <referredTableID>DA6066AF-5567-374E-CD1C-BA120B1E7A27</referredTableID>
 <keyObject>A747C401-2461-AEB3-FE99-D622661BFAEA</keyObject>
 <referredKeyID>A747C401-2461-AEB3-FE99-D622661BFAEA</referredKeyID>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
