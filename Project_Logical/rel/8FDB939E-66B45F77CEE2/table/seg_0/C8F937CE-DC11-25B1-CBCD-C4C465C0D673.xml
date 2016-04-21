@@ -87,6 +87,7 @@
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>CECC0219-2808-8666-694E-CE43501A19E9</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -102,6 +103,7 @@
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>0621F394-64B3-3A6B-0FA3-BF67AB61A60D</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

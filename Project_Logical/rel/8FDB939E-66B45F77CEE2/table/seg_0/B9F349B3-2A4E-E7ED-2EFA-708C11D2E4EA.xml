@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9F349B3-2A4E-E7ED-2EFA-708C11D2E4EA" name="sub_projects">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9F349B3-2A4E-E7ED-2EFA-708C11D2E4EA" name="P_Sub_Projects">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-04-14 03:15:25 UTC</createdTime>
 <generatorID>52830940-1A6C-6687-EE56-65184C3DBD14</generatorID>
@@ -76,7 +76,7 @@
 <colUsage columnID="11C959C8-BCF8-FDAC-415F-1DB0B5D084A7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B1177ECC-6E3E-8C2F-1CBF-F352C854B912" name="sub_projects_P_Project_FKv1">
+<ind_PK_UK id="B1177ECC-6E3E-8C2F-1CBF-F352C854B912" name="sub_projects_P_Project_FKv2">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-04-14 03:15:25 UTC</createdTime>
 <generatorID>C5E427F0-3624-A2AC-FB3C-B2D3DF48C641</generatorID>

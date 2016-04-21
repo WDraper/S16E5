@@ -213,6 +213,7 @@
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>9BA58C72-E60D-0DEA-1469-859A88D34F72</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
