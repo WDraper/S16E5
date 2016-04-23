@@ -52,19 +52,6 @@
 <colAssociation fkAssociation="93EC495E-B102-16C8-6190-CF4A1F6DE5E4" referredColumn="3B5BB00A-F44B-C0D4-8528-9FD9DECB5FDB"/>
 </associations>
 </Column>
-<Column name="previous_project" id="2DC88D68-04E7-5EBA-3844-D7D2308F9E6E">
-<createdBy>jakemayo</createdBy>
-<createdTime>2016-04-14 02:28:30 UTC</createdTime>
-<generatorID>2C4E2050-45B7-D5B4-0BC8-EE4D13ED9F3A</generatorID>
-<ownerDesignName>Project_Logical</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="773BCC7C-10F4-7C58-CE50-E2F7A20977BE" name="P_Projects_PK">

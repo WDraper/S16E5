@@ -114,6 +114,22 @@
 <colAssociation fkAssociation="0006AF59-292A-2A08-C059-B73E944393B8" referredColumn="F88B8160-3780-F3F8-C52A-B45D1A223C55"/>
 </associations>
 </Column>
+<Column name="mp_id" id="2D6CD08B-EF88-42C6-38A4-DE64F0DD2515">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-22 15:20:49 UTC</createdTime>
+<generatorID>966E9393-4A93-662A-54B7-C7C2B6014D07</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACD4523B-6CC0-9037-F460-44740EF7B307" referredColumn="3B5BB00A-F44B-C0D4-8528-9FD9DECB5FDB"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A5AD0DA1-1168-E55B-8887-8E9318D4FBE9" name="P_Project_PK">
@@ -148,6 +164,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7FFBDD29-85AB-AE23-8F79-057529719906"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D610857E-3E23-CA81-EA17-C90A5FC3CFAB" name="P_Project_P_Project_FK">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-22 15:20:49 UTC</createdTime>
+<generatorID>F0C0A085-61A3-296B-8EA0-7309C2AA9A66</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D6CD08B-EF88-42C6-38A4-DE64F0DD2515"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

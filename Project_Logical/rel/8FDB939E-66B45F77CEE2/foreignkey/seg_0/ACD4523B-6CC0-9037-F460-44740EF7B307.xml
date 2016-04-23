@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="26338269-AD18-153F-8962-A83B789BC4CD" containerWithKeyObject="B9F349B3-2A4E-E7ED-2EFA-708C11D2E4EA" localFKIndex="B1177ECC-6E3E-8C2F-1CBF-F352C854B912" name="sub_projects_P_Project_FKv2">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ACD4523B-6CC0-9037-F460-44740EF7B307" containerWithKeyObject="C8F937CE-DC11-25B1-CBCD-C4C465C0D673" localFKIndex="D610857E-3E23-CA81-EA17-C90A5FC3CFAB" name="P_Project_P_Project_FK">
 <createdBy>jakemayo</createdBy>
-<createdTime>2016-04-14 03:15:25 UTC</createdTime>
-<generatorID>C5E427F0-3624-A2AC-FB3C-B2D3DF48C641</generatorID>
+<createdTime>2016-04-22 15:20:49 UTC</createdTime>
+<generatorID>F0C0A085-61A3-296B-8EA0-7309C2AA9A66</generatorID>
 <ownerDesignName>Project_Logical</ownerDesignName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>C8F937CE-DC11-25B1-CBCD-C4C465C0D673</referredTableID>

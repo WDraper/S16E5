@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="manager_employee_id" id="B3203A00-6C06-3DCC-5B84-10D8BD0A58FB">
+<Column name="me_id" id="B3203A00-6C06-3DCC-5B84-10D8BD0A58FB">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-04-14 03:15:25 UTC</createdTime>
 <generatorID>D5120A1A-B53F-BB2E-0BAA-C0E370E6697D</generatorID>
@@ -53,7 +53,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="65FB20FD-649D-879F-B397-0BC3FBDEF85D" name="manager_employee_PK">
+<ind_PK_UK id="65FB20FD-649D-879F-B397-0BC3FBDEF85D" name="Manager_Employee_PK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-04-14 03:15:25 UTC</createdTime>
 <generatorID>55A7E51A-336B-7F0C-5939-7580B148B5F5</generatorID>
@@ -65,7 +65,7 @@
 <colUsage columnID="B3203A00-6C06-3DCC-5B84-10D8BD0A58FB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="58B38E7F-8F77-84A8-A678-F06DB282450F" name="manager_employee_P_Person_FK">
+<ind_PK_UK id="58B38E7F-8F77-84A8-A678-F06DB282450F" name="Manager_Employee_P_Person_FK">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-04-14 03:15:25 UTC</createdTime>
 <generatorID>F81F8C2E-812D-F690-BDE4-9734CA7856AE</generatorID>
@@ -76,7 +76,7 @@
 <colUsage columnID="B414B8D9-D56E-1323-CA0C-189CA1B50E64"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4C457CBD-E813-BB6E-E43E-0852BC246AA0" name="manager_employee_P_Person_FKv2">
+<ind_PK_UK id="4C457CBD-E813-BB6E-E43E-0852BC246AA0" name="Manager_Employee_P_Person_FKv1">
 <createdBy>jakemayo</createdBy>
 <createdTime>2016-04-14 03:15:25 UTC</createdTime>
 <generatorID>5DF34983-303B-8A20-6032-84B0A2362E06</generatorID>

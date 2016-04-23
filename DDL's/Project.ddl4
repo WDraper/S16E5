@@ -36,18 +36,17 @@ SELECT
     person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person;
@@ -61,18 +60,17 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
@@ -80,18 +78,17 @@ BEGIN
         :NEW.person_type,
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
 END;
@@ -100,21 +97,22 @@ END;
 create view P_Create_Spouse_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
-    dept_id
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
+    dept_id,
+    spouse_id
 FROM P_Person where person_type = 'Person' ;
 
 create or replace TRIGGER P_Create_Spouse_trigger
@@ -126,59 +124,57 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
-        'Employee',
+        :NEW.person_type,
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
-        emp_id) ;
+        :NEW.spouse_id) ;
 END;
 /
 
 create view P_Create_Children_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person where person_type = 'Person' ;
@@ -192,69 +188,57 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
         :NEW.person_id,
-        'Employee',
+        :NEW.person_type,
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
-
-    insert into P_Parent_Child(
-        parent_child_id,
-        parent_id,
-        child_id)
-    VALUES (
-        :NEW.parent_child_id,
-        :emp_id,
-        :child_emp_id
-        );
 END;
 /
 
 create view P_Employee_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person where person_type = 'Employee' ;
@@ -268,18 +252,17 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
@@ -287,18 +270,17 @@ BEGIN
         'Employee',
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
 END;
@@ -307,20 +289,20 @@ END;
 create view P_Previous_Employee_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person where person_type = 'Previous_Employee' ;
@@ -334,18 +316,17 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
@@ -353,18 +334,17 @@ BEGIN
         'Previous_Employee',
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
 END;
@@ -373,20 +353,20 @@ END;
 create view P_Manager_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person where person_type = 'Manager' ;
@@ -400,18 +380,17 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
@@ -419,18 +398,17 @@ BEGIN
         'Manager',
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
 END;
@@ -439,20 +417,20 @@ END;
 create view P_President_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person where person_type = 'President' ;
@@ -466,18 +444,17 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
@@ -485,18 +462,17 @@ BEGIN
         'President',
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
 END;
@@ -505,20 +481,20 @@ END;
 create view P_Interim_Manager_view as
 SELECT 
     person_id,
+    person_type,
     first_name,
     last_name,
-    home_address,
+    street_address,
     city,
     state,
     zipcode,
-    home_phone,
-    us_citizen,
-    employee_id,
+    phone,
     salary,
-    salary_exception,
-    isFired,
-    quit,
     bonus,
+    us_citizen,
+    salary_exception,
+    fired,
+    quit,
     dept_id,
     spouse_id
 FROM P_Person where person_type = 'Interim_Manager' ;
@@ -532,18 +508,17 @@ BEGIN
         person_type,
         first_name,
         last_name,
-        home_address,
+        street_address,
         city,
         state,
         zipcode,
-        home_phone,
-        us_citizen,
-        employee_id,
+        phone,
         salary,
-        salary_exception,
-        isFired,
-        quit,
         bonus,
+        us_citizen,
+        salary_exception,
+        fired,
+        quit,
         dept_id,
         spouse_id)
     VALUES ( 
@@ -551,18 +526,17 @@ BEGIN
         'Interim_Manager',
         :NEW.first_name,
         :NEW.last_name,
-        :NEW.home_address,
+        :NEW.street_address,
         :NEW.city,
         :NEW.state,
         :NEW.zipcode,
-        :NEW.home_phone,
-        :NEW.us_citizen,
-        :NEW.employee_id,
+        :NEW.phone,
         :NEW.salary,
-        :NEW.salary_exception,
-        :NEW.isFired,
-        :NEW.quit,
         :NEW.bonus,
+        :NEW.us_citizen,
+        :NEW.salary_exception,
+        :NEW.fired,
+        :NEW.quit,
         :NEW.dept_id,
         :NEW.spouse_id) ;
 END;
@@ -576,7 +550,8 @@ SELECT
     end_date,
     est_person_hours,
     manager_id,
-    dept_id
+    dept_id,
+    mp_id
 FROM P_Project where project_type = 'Current_Project' ;
 
 create or replace TRIGGER P_Current_Project_trigger
@@ -591,7 +566,8 @@ BEGIN
         end_date,
         est_person_hours,
         manager_id,
-        dept_id)
+        dept_id,
+        mp_id)
     VALUES ( 
         :NEW.project_id,
         :NEW.project_title,
@@ -600,7 +576,8 @@ BEGIN
         :NEW.end_date,
         :NEW.est_person_hours,
         :NEW.manager_id,
-        :NEW.dept_id) ;
+        :NEW.dept_id,
+        :NEW.mp_id) ;
 END;
 /
 
@@ -612,7 +589,8 @@ SELECT
     end_date,
     est_person_hours,
     manager_id,
-    dept_id
+    dept_id,
+    mp_id
 FROM P_Project where project_type = 'Previous_Project' ;
 
 create or replace TRIGGER P_Previous_Project_trigger
@@ -627,7 +605,8 @@ BEGIN
         end_date,
         est_person_hours,
         manager_id,
-        dept_id)
+        dept_id,
+        mp_id)
     VALUES ( 
         :NEW.project_id,
         :NEW.project_title,
@@ -636,7 +615,8 @@ BEGIN
         :NEW.end_date,
         :NEW.est_person_hours,
         :NEW.manager_id,
-        :NEW.dept_id) ;
+        :NEW.dept_id,
+        :NEW.mp_id) ;
 END;
 /
 
@@ -649,7 +629,8 @@ SELECT
     end_date,
     est_person_hours,
     manager_id,
-    dept_id
+    dept_id,
+    mp_id
 FROM P_Project;
 
 create or replace TRIGGER P_Project_trigger
@@ -664,7 +645,8 @@ BEGIN
         end_date,
         est_person_hours,
         manager_id,
-        dept_id)
+        dept_id,
+        mp_id)
     VALUES ( 
         :NEW.project_id,
         :NEW.project_title,
@@ -673,6 +655,10 @@ BEGIN
         :NEW.end_date,
         :NEW.est_person_hours,
         :NEW.manager_id,
-        :NEW.dept_id) ;
+        :NEW.dept_id,
+        :NEW.mp_id) ;
 END;
 /
+
+
+

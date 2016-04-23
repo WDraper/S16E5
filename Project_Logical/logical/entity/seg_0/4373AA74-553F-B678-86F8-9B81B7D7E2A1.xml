@@ -125,6 +125,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="project_id1" id="966E9393-4A93-662A-54B7-C7C2B6014D07">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-22 15:16:00 UTC</createdTime>
+<generatorID>F0C0A085-61A3-296B-8EA0-7309C2AA9A66</generatorID>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="8FDB939E-103F-A16C-4C39-66B45F77CEE2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6869457C-3658-7F7D-B5B8-6F464031393B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2D2D441A-629A-FA78-D33C-8277862174A7" name="Project PK">
