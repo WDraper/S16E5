@@ -24,7 +24,6 @@
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>15CC671C-FDA8-C8D5-D173-E386BE222333</generatorID>
 <ownerDesignName>Project_Logical</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

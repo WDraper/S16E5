@@ -24,7 +24,6 @@
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>F279DD6B-A922-64E5-7B1B-E4E29BD4CC30</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +36,6 @@
 <createdTime>2016-03-28 23:27:58 UTC</createdTime>
 <generatorID>A515D408-9845-6948-F032-3D0DC601ED5E</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -50,7 +48,6 @@
 <createdTime>2016-03-24 00:03:44 UTC</createdTime>
 <generatorID>338A4A73-F40F-3656-1B01-68DA6130D564</generatorID>
 <ownerDesignName>Logical_Project_A</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>

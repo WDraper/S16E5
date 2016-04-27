@@ -51,6 +51,28 @@
 <colAssociation fkAssociation="9BAE132B-FC08-E204-F15B-CF435E78ABDA" referredColumn="C272661B-5DCB-EE40-468A-C976D4A27C28"/>
 </associations>
 </Column>
+<Column name="pending" id="354CC73A-08D5-F4D2-10DA-FB77A3BB0530">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-26 21:42:00 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="creator" id="2B188573-5B02-800A-B8B4-7FF7C956F3A1">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-04-26 21:42:00 UTC</createdTime>
+<ownerDesignName>Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A879B9BC-4F26-7B0C-740D-DA5722345408" name="P_Parent_Child_PK">
