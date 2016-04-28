@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B14E6454-D41F-F7EC-B015-33A64E252C5A" name="Project">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-22 18:09:59 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="project_no" id="A456D701-3C53-396F-6F1C-0ACB660DF0E9">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-22 18:10:13 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project_title" id="A96745D1-DEA5-0F54-E0FE-207774DF1938">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-22 18:10:32 UTC</createdTime>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="142601AC-CF8D-654A-30D7-39B0D098DAD5">
+<createdBy>jakemayo</createdBy>
+<createdTime>2016-03-22 18:30:11 UTC</createdTime>
+<generatorID>51E604D9-E52B-67C7-9370-7FCB48507985</generatorID>
+<ownerDesignName>ProjectA</ownerDesignName>
+<engineerTo>
+<item key="A324A656-C779-2315-5869-59AF98B10A8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5D2DC010-8179-A945-373D-6D4FA43E51DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
