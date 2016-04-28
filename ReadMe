@@ -5,17 +5,14 @@ Jake Mayo
 Wes Draper
 Steven Zhu
 
-Jakes working Apex
+Part 1
 https://apex.oracle.com/pls/apex/f?p=28267:1:112799530846455::NO::P_ID,P_TYPE:0,%27%27
 
 
 
 
-Stevens Apex
-URL to our apex app: https://apex.oracle.com/pls/apex/f?p=52430:1:10378895798932
+Part 2
+https://apex.oracle.com/pls/apex/f?p=107624:1:16061761890752
 
-
-cat Project.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser.jar > Project.ddl2
- 
- 
-cat Project.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser2.jar > Project.ddl3
+Power Point
+https://docs.google.com/presentation/d/1m3PXFxKWsW1f8LUnNh1syl2wfS21YFRUT1Ia4d6henI/edit?usp=sharing
